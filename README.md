@@ -1,7 +1,6 @@
-Essa aplicação te como objetivo fazer duas ações.
+Essa aplicação tem como objetivo duas ações.
 
- - Receber um endereço web.
- - Procurar o IP Publico desse endereço web.
+ - Receber um endereço web, pocurar o IP Publico desse endereço web.
  - Na segunda ação ele vai devolver o nome do servidor onde o endereço esta hospedado. 
 
 Nesta aplicação usamos dois pacotes, sendo eles: 
