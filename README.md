@@ -1,0 +1,31 @@
+Essa aplicação te como objetivo fazer duas ações.
+
+ - Receber um endereço web.
+ - Procurar o IP Publico desse endereço web.
+ - Na segunda ação ele vai devolver o nome do servidor onde o endereço esta hospedado. 
+
+Nesta aplicação usamos dois pacotes, sendo eles: 
+    - "github.com/urfave/cli",
+    - "net"
+
+ - Exemplo de comando para rodar: "go run main.go ip --parametro1 valor1 --parametro2 valor2"
+   sendo --parametro -> nossa Flag(que seria o host que esta no -> app.go -> app.Commands dentro do código), ainda dentro do app.Commands, temos o Action que é a ação do comando.
+
+ - Exemplo de comando para busca de IPS(Rodar pelo terminal):
+   go run main.go ip --host amazon.com.br
+   Esse comando vai trazer os IPs publicos do site da Amazon
+
+ - Exemplo de comando(Rodar pelo terminal):
+   go run main.go ip --host mercadolivre.com.br
+   Esse comando vai trazer os IPs publicos do site do Mercado Livre
+
+ - Se for passado o comando sem a flag host, vai trazer o IP publico da Biodoc
+   ex de comando sem o host: go run main.go ip
+
+ - Exemplo de comando para busca de servidores(Rodar pelo terminal):
+   go run main.go servidores --host biodoc.com.br
+   Esse comando vai trazer o nome dos servidores onde a Biodoc está hospedado.
+
+ - Podemos rodar o comando "go build" pelo terminal e o comando fica mais rapido pois não temos o tempo de compilação, ele só executa:
+   ./linha-de-comando ip --host biodoc.com.br -> para IPS
+   ./linha-de-comando servidores --host biodoc.com.br -> para servidores
